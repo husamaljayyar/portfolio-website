@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #041b33;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+.boox svg:hover * {
+  color: rgb(191 35 35) !important;
+  fill: rgb(179 36 36) !important;
+}
+
+.test {
+  @apply text-blue-600 text-4xl hover:border-blue-600 border-b-4;
+}
+
+.HeroSection {
+  background: rgb(49, 48, 48);
+  clip-path: polygon(0 0, 100% 0%, 100% 88%, 45% 100%, 0 90%);
+}
+
+.round-image {
+  background-image: url("./Image/ImagePerson.png");
+  background-size: cover;
+  display: block;
+  border-radius: 100% 0% 100% 100% / 100% 100% 100% 100%;
+}
+
+/*   Footer   */
+.FooterSetion {
+  @apply w-full h-16 m-0 p-0 text-center;
+  background: rgb(49, 48, 48);
+}
+
+.experience_section {
+  background: rgba(80, 80, 80, 0.1);
+}
+
+.skils-section {
+  @apply w-[7.5rem] h-28 m-1 text-center font-normal rounded-lg bg-Purple text-white flex flex-row items-center justify-center text-lg;
+}
+
+/*  Card  */
+.Boox {
+  @apply z-10 m-1;
+  width: 320px;
+  height: 320px;
+  padding: 30px 20px 60px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
