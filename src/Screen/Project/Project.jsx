@@ -8,7 +8,7 @@ export default function MyProject() {
   let project = dataSlider.slice(0, page);
 
   return (
-    <section className="flex flex-col items-center w-full bg-slate-200">
+    <section className="flex flex-col items-center w-full bg-slate-100 ">
       <div
         className="sm:w-2/3 w-11/12 max-w-[1400px] flex flex-col items-center  m-10 flex-wrap  bg-gradient-to-r   
      "
@@ -21,7 +21,7 @@ export default function MyProject() {
           {project.map((item) => (
             <div
               key={item.id}
-              className=" h-auto rounded overflow-hidden shadow-lg m-2 bg-white w-[321px] "
+              className=" h-auto  overflow-hidden shadow-lg m-1 bg-white text-black w-[32.5%] min-w-[300px]"
             >
               <img
                 className="w-full h-56"
@@ -29,11 +29,17 @@ export default function MyProject() {
                 alt="Sunset in the mountains"
               />
               <div className="px-6 py-4 flex flex-row justify-between">
-                <p className="font-bold text-lg mb-2 ">{item.title}</p>
-                <a href={item.link}>
+                <a
+                  href={item.link}
+                  className="w-full flex flex-row justify-between "
+                >
+                  <p className="font-bold text-lg mb-2 font-mono ">
+                    {item.title}
+                  </p>
+
                   <MdOpenInNew
-                    style={{ fontSize: "25px" }}
-                    className="cursor-pointer"
+                    style={{ fontSize: "23px" }}
+                    className="cursor-pointer mt-1"
                   />
                 </a>
               </div>
@@ -41,7 +47,7 @@ export default function MyProject() {
           ))}
         </div>
         <button
-          className="text-white bg-Purple  rounded-full mt-11 text-xl font-light font-mono  w-52 h-16 "
+          className="text-white bg-Purple  rounded-full mt-7 text-xl font-light font-mono w-52 h-16 "
           onClick={() => {
             setPage(dataSlider.length);
           }}

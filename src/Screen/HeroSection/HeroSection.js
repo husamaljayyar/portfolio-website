@@ -1,4 +1,3 @@
-
 import { FaFacebookF } from "react-icons/fa";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -8,8 +7,7 @@ import "animate.css";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-row items-center justify-center w-screen HeroSection  h-[500px] " >
-
+    <div className="flex flex-row items-center justify-center w-screen HeroSection  h-[500px] ">
       <div className="flex flex-col justify-between absolute  left-2 top-32 h-36 w-14  ">
         <a href="https://www.facebook.com/">
           <FaFacebookF className=" text-gray-200 text-2xl" />
@@ -40,25 +38,25 @@ const HeroSection = () => {
         </div>
 
         <div
-          className="flex flex-col items-center md:items-start justify-end 
+          className="flex flex-col items-center md:items-start justify-end xl:mt-10
           text-xl h-auto  md:w-1/2 w-full animate__animated animate__zoomInDown "
         >
           <h1
-            className="w-auto font-mono h-auto font-semibold	text-indigo-500 text-3xl 
+            className="w-auto font-mono h-auto font-semibold	text-indigo-500 text-3xl  
               text-center md:text-left "
           >
             Hussam ALJayyar
           </h1>
           <h1
             className="w-[90vw] sm:w-auto h-auto font-light text-2xl leading-10  text-center
-              text-white font-mono py-1
+              text-white  py-1 font-mono
              "
           >
             Front End Developer
           </h1>
-         <p
+          <p
             className="sm:block  hidden w-auto	h-auto text-xl leading-8
-             mt-2  text-white  
+             mt-2  text-white   
             font-light text-center md:text-left"
           >
             A creative front-end developer at your service with solid experience
@@ -72,7 +70,6 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-
     </div>
   );
 };

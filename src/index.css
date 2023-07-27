@@ -54,14 +54,12 @@
 }
 
 .skils-section {
-  @apply w-[7.5rem] h-28 m-1 text-center font-normal rounded-lg bg-Purple text-white flex flex-row items-center justify-center text-lg;
+  @apply xl:w-[7.5rem]  w-[10rem] h-[7rem] m-1 text-center   bg-Purple text-white flex flex-row items-center justify-center text-lg;
 }
 
 /*  Card  */
 .Boox {
   @apply z-10 m-1;
-  width: 320px;
-  height: 320px;
   padding: 30px 20px 60px;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
 }

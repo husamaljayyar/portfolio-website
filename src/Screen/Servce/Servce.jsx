@@ -13,7 +13,7 @@ export default function Servce() {
           our services section
         </p>{" "}
         <div className="sm:w-2/3 w-11/12 max-w-[1400px]  flex md:flex-row flex-col flex-wrap items-center 2xl:justify-between justify-center">
-          <div className="Boox flex flex-col justify-start items-center text-white  bg-indigo-500 rounded-md">
+          <div className="Boox flex flex-col justify-start items-center text-white  bg-indigo-500  w-[30%] min-w-[300px] h-[320px]">
             <LandingPage
               className="mb-5 text-2xl "
               height="1.8em"
@@ -28,7 +28,7 @@ export default function Servce() {
             </p>
           </div>
 
-          <div className="Boox flex flex-col justify-start items-center text-white  bg-indigo-500 rounded-md ">
+          <div className="Boox flex flex-col justify-start items-center text-white  bg-indigo-500   w-[30%] min-w-[300px] h-[320px]">
             <MdWeb className="mb-5 text-5xl" />
             <h3 className="font-mono font-bold text-lg text-center">
               Build websites{" "}
@@ -39,7 +39,7 @@ export default function Servce() {
             </p>
           </div>
 
-          <div className="Boox flex flex-col justify-start items-center text-white  bg-indigo-500 rounded-md ">
+          <div className="Boox flex flex-col justify-start items-center text-white  bg-indigo-500  w-[30%] min-w-[300px] h-[320px]">
             <BsCodeSlash className="mb-5 text-5xl" />
             <h3 className="font-mono font-bold text-lg text-center">
               develop and coding the applications
